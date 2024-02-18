@@ -3,24 +3,25 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UI_script : MonoBehaviour
-{   //Put On Player
-    string Interact;
-    public TMP_Text Interact_Text;
+public class Sign_script : MonoBehaviour
+{  //Put On Player
+    string Sign;
+    public TMP_Text Sign_text;
     //You'll need to manually set the textbox from the prefab
     void Start()
     {
-    
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Interact = "Press E";
-        if (collision.gameObject.tag == "sign")
-            //change null to sign tag once made
+        Sign = "";
+        //put animal class for habitat
+        if (collision.gameObject.tag == null)
+        //change null to sign tag once made
         {
             if (Input.GetKey(KeyCode.E))
             {
-                Interact = "";
+                Sign = "";
                 //Interact() function goes here!!!
             }
         }
@@ -28,6 +29,7 @@ public class UI_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Interact_Text.SetText(Interact);
+        Sign_text.SetText(Sign);
     }
+   
 }
