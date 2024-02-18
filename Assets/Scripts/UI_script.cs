@@ -4,10 +4,10 @@ using TMPro;
 using UnityEngine;
 
 public class UI_script : MonoBehaviour
-{
+{   //Put On Player
     string Interact;
     public TMP_Text Interact_Text;
-    
+    //You'll need to manually set the textbox from the prefab
     void Start()
     {
     
