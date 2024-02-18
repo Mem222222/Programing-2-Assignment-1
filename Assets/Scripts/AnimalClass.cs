@@ -11,43 +11,55 @@ public abstract class Animal : MonoBehaviour
 
     //movement
     public float moveRadius; // Radius within which the object will move
-    public float minInterval; // Minimum interval between movements
-    public float maxInterval;
     public float moveSpeed;// Maximum interval between movements
 
+    public float timer = 0f;
+    public float interval;
+
     public Vector3 randomDestination;
-    public float nextMoveTime;
-    public float moveProbibility;
+    
     public abstract void Eat();
     public void Move()
     {
-
-        if (nextMoveTime > moveProbibility && transform.position == randomDestination)
+        timer += Time.deltaTime;
+        if (timer >= interval)
         {
             CalculateNewDestination();
-            MoveToRandomDestination();
+            timer = 0f;
 
         }
-        else if (transform.position == randomDestination) { CalculateNewDestination(); }
-        else { MoveToRandomDestination(); }
-                
 
+        MoveToRandomDestination();
         
+
+
     }
     public void CalculateNewDestination()
     {
         
-        nextMoveTime = Time.time + Random.Range(minInterval, maxInterval);
-        if (transform.position == randomDestination)
-        {
-            randomDestination = transform.position + Random.insideUnitSphere * moveRadius;
-        }
+      
+        
+        
+        randomDestination = transform.position + Random.insideUnitSphere * moveRadius;
+       
         
     }
 
     public void MoveToRandomDestination()
     {
         transform.position = Vector3.MoveTowards(transform.position, randomDestination, moveSpeed * Time.deltaTime);
+    }
+    public IEnumerator Wait() 
+    { 
+        while (true) {
+            
+            randomDestination = transform.position + Random.insideUnitSphere * moveRadius;
+
+            yield return new WaitForSeconds(Random.Range(1, 12));
+        }
+            
+
+
     }
 }
 
