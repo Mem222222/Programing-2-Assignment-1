@@ -7,19 +7,21 @@ public class UI_script : MonoBehaviour
 {
     string Interact;
     public TMP_Text Interact_Text;
-    // Start is called before the first frame update
+    
     void Start()
     {
-        GetComponent<UI_script>(); 
+    
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         Interact = "Press E";
         if (collision.gameObject.tag == null)
+            //change null to sign tag once made
         {
             if (Input.GetKey(KeyCode.E))
             {
                 Interact = "";
+                //Interact() function goes here!!!
             }
         }
     }
