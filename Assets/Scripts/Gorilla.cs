@@ -11,12 +11,13 @@ public class Gorilla : Animal
     private void Start()
     {
         moveRadius = 6; // Radius within which the object will move
-        minInterval = 0; // Minimum interval between movements
-        maxInterval = 100;
+       
+        
         rateOfHunger = 3;
         moveSpeed = 3;
-        moveProbibility = 75f;
         
+        interval = Random.Range(1, 12);
+
         CalculateNewDestination();
         MoveToRandomDestination();
     }
