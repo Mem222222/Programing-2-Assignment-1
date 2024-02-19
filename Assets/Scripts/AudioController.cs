@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public float timer = 0;
-    public float interval = Random.Range(1.0f, 12.0f);
+    public float interval;
 
     private AudioSource audioSource;
     public AudioClip clip;
@@ -14,16 +14,20 @@ public class AudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        interval = Random.Range(5f, 12.0f);
         audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         timer += Time.deltaTime;
         if (timer >= interval)
         {
             audioSource.PlayOneShot(clip);
+            interval = Random.Range(5f, 12.0f);
+            timer = 0;
         }
     }
 }
