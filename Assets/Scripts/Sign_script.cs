@@ -14,11 +14,11 @@ public class Sign_script : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Sign = "";
+       
         //put animal class for habitat
         if (collision.gameObject.tag == "Player")
         
-        {
+        { Sign = "Press E";
             if (Input.GetKey(KeyCode.E))
             {
                 Sign = "";
