@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gorilla : Animal
+public class Zebra : Animal
 {
     public bool sign_triggered;
     public bool isAggressive;
