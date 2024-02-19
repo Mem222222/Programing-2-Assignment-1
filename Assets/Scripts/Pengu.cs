@@ -24,15 +24,12 @@ public class pengu : Animal
     private void Update()
     {
         Move();
-        if (sign_triggered)
-        {
-            sign_triggered = false;
-            //action here!
-        }
+       
     }
 
     public override void Eat()
     {
+        textbox.SetText("Imma bout to poop!");
         Debug.Log("Pengu eats *munch munch*");
     }
 

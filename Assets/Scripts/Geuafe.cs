@@ -24,15 +24,12 @@ public class Giraffe : Animal
     private void Update()
     {
         Move();
-        if (sign_triggered)
-        {
-            sign_triggered = false;
-            //action here!
-        }
+       
     }
 
     public override void Eat()
     {
+        textbox.SetText("I've seen things dawg");
         Debug.Log("Gurafe eats *munch munch*");
     }
 
