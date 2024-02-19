@@ -586,6 +586,8 @@ GameObject:
   - component: {fileID: 570096886}
   - component: {fileID: 570096885}
   - component: {fileID: 570096887}
+  - component: {fileID: 570096888}
+  - component: {fileID: 570096889}
   m_Layer: 0
   m_Name: zebra
   m_TagString: Untagged
@@ -695,6 +697,55 @@ CapsuleCollider2D:
   m_Offset: {x: 0.011567518, y: -0.08482933}
   m_Size: {x: 0.699239, y: 0.7146625}
   m_Direction: 0
+--- !u!114 &570096888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570096884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3c2853c02ada749809ccb92a69e9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rateOfHunger: 0
+  currentTemperature: 0
+  health: 0
+  moveRadius: 0
+  moveSpeed: 0
+  timer: 0
+  interval: 0
+  randomDestination: {x: 0, y: 0, z: 0}
+  sign_triggered: 0
+  isAggressive: 0
+--- !u!50 &570096889
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570096884}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &613673229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1101,8 @@ GameObject:
   - component: {fileID: 774690911}
   - component: {fileID: 774690910}
   - component: {fileID: 774690912}
+  - component: {fileID: 774690913}
+  - component: {fileID: 774690914}
   m_Layer: 0
   m_Name: Giraffe
   m_TagString: Untagged
@@ -1159,6 +1212,55 @@ CapsuleCollider2D:
   m_Offset: {x: 0.040521286, y: 0.01447211}
   m_Size: {x: 0.91895795, y: 0.97105694}
   m_Direction: 0
+--- !u!114 &774690913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774690909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90cba8cb7fcf0749a86dcc260d66662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rateOfHunger: 0
+  currentTemperature: 0
+  health: 0
+  moveRadius: 0
+  moveSpeed: 0
+  timer: 0
+  interval: 0
+  randomDestination: {x: 0, y: 0, z: 0}
+  sign_triggered: 0
+  isAggressive: 0
+--- !u!50 &774690914
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774690909}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &804959003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1431,7 @@ MonoBehaviour:
   timer: 0
   interval: 0
   randomDestination: {x: 0, y: 0, z: 0}
+  sign_triggered: 0
   isAggressive: 0
 --- !u!212 &815406535
 SpriteRenderer:
@@ -1600,6 +1703,8 @@ GameObject:
   - component: {fileID: 907783564}
   - component: {fileID: 907783563}
   - component: {fileID: 907783565}
+  - component: {fileID: 907783566}
+  - component: {fileID: 907783567}
   m_Layer: 0
   m_Name: Pingu
   m_TagString: Untagged
@@ -1709,6 +1814,55 @@ CapsuleCollider2D:
   m_Offset: {x: -0.028310947, y: -0.19109884}
   m_Size: {x: 0.44793674, y: 0.6178026}
   m_Direction: 0
+--- !u!114 &907783566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907783562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27214ea8b720ed9438c264ab5216d994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rateOfHunger: 0
+  currentTemperature: 0
+  health: 0
+  moveRadius: 0
+  moveSpeed: 0
+  timer: 0
+  interval: 0
+  randomDestination: {x: 0, y: 0, z: 0}
+  sign_triggered: 0
+  isAggressive: 0
+--- !u!50 &907783567
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907783562}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &945018568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10614,7 +10768,7 @@ GameObject:
   - component: {fileID: 1160796817}
   m_Layer: 0
   m_Name: me
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

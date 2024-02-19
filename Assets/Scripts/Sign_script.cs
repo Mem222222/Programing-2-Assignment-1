@@ -16,13 +16,14 @@ public class Sign_script : MonoBehaviour
     {
         Sign = "";
         //put animal class for habitat
-        if (collision.gameObject.tag == null)
-        //change null to sign tag once made
+        if (collision.gameObject.tag == "Player")
+        
         {
             if (Input.GetKey(KeyCode.E))
             {
                 Sign = "";
                 //Interact() function goes here!!!
+                
             }
         }
     }

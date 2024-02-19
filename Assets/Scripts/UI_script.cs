@@ -14,8 +14,9 @@ public class UI_script : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
+        Sign_script signclass = collision.GetComponent<Sign_script>();
         Interact = "Press E";
-        if (collision.gameObject.tag == "sign")
+        if (signclass)
             //change null to sign tag once made
         {
             if (Input.GetKey(KeyCode.E))
