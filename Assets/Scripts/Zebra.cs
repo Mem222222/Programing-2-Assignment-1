@@ -24,15 +24,12 @@ public class Zebra : Animal
     private void Update()
     {
         Move();
-        if (sign_triggered)
-        {
-            sign_triggered = false;
-            //action here!
-        }
+       
     }
 
     public override void Eat()
     {
+        textbox.SetText("*num num num*  *BURAP*");
         Debug.Log("zbra eats *munch munch*");
     }
 

@@ -24,15 +24,12 @@ public class Gorilla : Animal
     private void Update()
     {
         Move();
-        if (sign_triggered)
-        {
-            sign_triggered = false;
-            //action here!
-        }
+        
     }
 
     public override void Eat()
     {
+        textbox.SetText("yo thanks for da munch");
         Debug.Log("Gorilla eats *munch munch*");
     }
 
