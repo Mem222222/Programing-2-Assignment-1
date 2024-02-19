@@ -16,7 +16,7 @@ public class Sign_script : MonoBehaviour
     {
         Sign = "";
         //put animal class for habitat
-        if (collision.gameObject.tag == null)
+        if (collision.gameObject.tag == "player")
         //change null to sign tag once made
         {
             if (Input.GetKey(KeyCode.E))
