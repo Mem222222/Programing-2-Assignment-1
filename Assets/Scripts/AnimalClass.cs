@@ -18,9 +18,16 @@ public abstract class Animal : MonoBehaviour
     public float interval;
 
     public Vector3 randomDestination;
-    
+    public interface iFeedable
+    {
     public abstract void Eat();
-    public abstract void Interact();
+    }
+    
+   
+    public interface iinteractable
+    {
+        public abstract void Interact();
+    }
     public void Move()
     {
         timer += Time.deltaTime;

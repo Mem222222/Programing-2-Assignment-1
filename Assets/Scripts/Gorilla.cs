@@ -2,8 +2,9 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Animal;
 
-public class Gorilla : Animal
+public class Gorilla : Animal, iinteractable, iFeedable
 {
     public bool sign_triggered;
     public bool isAggressive;
@@ -27,12 +28,13 @@ public class Gorilla : Animal
         
     }
 
-    public override void Eat()
+    public void Eat()
     {
         textbox.SetText("yo thanks for da munch");
         Debug.Log("Gorilla eats *munch munch*");
     }
-    public override void Interact()
+
+    public void Interact()
     {
         textbox.SetText("It gets boring in my cage");
      

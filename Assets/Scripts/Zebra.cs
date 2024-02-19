@@ -2,8 +2,9 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Animal;
 
-public class Zebra : Animal
+public class Zebra : Animal, iinteractable, iFeedable
 {
     public bool sign_triggered;
     public bool isAggressive;
@@ -27,12 +28,12 @@ public class Zebra : Animal
        
     }
 
-    public override void Eat()
+    public  void Eat()
     {
         textbox.SetText("*num num num*  *BURAP*");
         Debug.Log("zbra eats *munch munch*");
     }
-    public override void Interact()
+    public void Interact()
     {
         textbox.SetText("wanna see a magic trick? I can make my water bowl disappear!");
         

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static Animal;
 
 public class Sign_script : MonoBehaviour
 {  //Put On Player
@@ -14,8 +15,9 @@ public class Sign_script : MonoBehaviour
 
     }
     private void OnTriggerStay2D(Collider2D collision)
-    { Animal animal = target.GetComponent<Animal>();
-       
+    {
+        iinteractable animal = target.GetComponent<iinteractable>();
+        iFeedable animal2 = target.GetComponent<iFeedable>();
         //put animal class for habitat
         if (collision.gameObject.tag == "Player")
            
@@ -24,7 +26,7 @@ public class Sign_script : MonoBehaviour
             {
                 Sign = "You feed the " + animal + " Crack!";
                 //Interact() function goes here!!!
-                animal.Eat();
+               animal2.Eat();
             }
             if (Input.GetKey(KeyCode.R))
             {
