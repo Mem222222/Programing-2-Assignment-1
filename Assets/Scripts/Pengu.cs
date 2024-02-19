@@ -33,7 +33,7 @@ public class pengu : Animal
 
     public override void Eat()
     {
-        Debug.Log("Gorilla eats *munch munch*");
+        Debug.Log("Pengu eats *munch munch*");
     }
 
    

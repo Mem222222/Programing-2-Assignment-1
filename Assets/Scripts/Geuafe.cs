@@ -33,7 +33,7 @@ public class Giraffe : Animal
 
     public override void Eat()
     {
-        Debug.Log("Gorilla eats *munch munch*");
+        Debug.Log("Gurafe eats *munch munch*");
     }
 
    
