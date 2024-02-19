@@ -22,7 +22,7 @@ public class Sign_script : MonoBehaviour
         {   
             if (Input.GetKey(KeyCode.E))
             {
-                Sign = "";
+                Sign = "You feed the " + animal + " Crack!";
                 //Interact() function goes here!!!
                 animal.Eat();
             }
