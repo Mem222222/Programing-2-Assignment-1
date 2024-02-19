@@ -32,7 +32,11 @@ public class Giraffe : Animal
         textbox.SetText("I've seen things dawg");
         Debug.Log("Gurafe eats *munch munch*");
     }
+    public override void Interact()
+    {
+        textbox.SetText("I will watch the bombs fall!");
+     
+    }
 
-   
-    
+
 }

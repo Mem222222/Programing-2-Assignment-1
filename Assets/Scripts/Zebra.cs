@@ -32,7 +32,11 @@ public class Zebra : Animal
         textbox.SetText("*num num num*  *BURAP*");
         Debug.Log("zbra eats *munch munch*");
     }
+    public override void Interact()
+    {
+        textbox.SetText("wanna see a magic trick? I can make my water bowl disappear!");
+        
+    }
 
-   
-    
+
 }

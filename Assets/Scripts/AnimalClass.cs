@@ -20,6 +20,7 @@ public abstract class Animal : MonoBehaviour
     public Vector3 randomDestination;
     
     public abstract void Eat();
+    public abstract void Interact();
     public void Move()
     {
         timer += Time.deltaTime;

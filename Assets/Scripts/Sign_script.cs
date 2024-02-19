@@ -26,6 +26,12 @@ public class Sign_script : MonoBehaviour
                 //Interact() function goes here!!!
                 animal.Eat();
             }
+            if (Input.GetKey(KeyCode.R))
+            {
+                Sign = "You petted and interaced with the " + animal;
+                //Interact() function goes here!!!
+                animal.Interact();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

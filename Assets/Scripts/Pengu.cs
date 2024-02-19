@@ -32,7 +32,11 @@ public class pengu : Animal
         textbox.SetText("Imma bout to poop!");
         Debug.Log("Pengu eats *munch munch*");
     }
+    public override void Interact()
+    {
+        textbox.SetText("The Zebra is very weird, I dont like him");
+       
+    }
 
-   
-    
+
 }

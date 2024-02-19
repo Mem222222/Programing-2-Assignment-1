@@ -32,7 +32,11 @@ public class Gorilla : Animal
         textbox.SetText("yo thanks for da munch");
         Debug.Log("Gorilla eats *munch munch*");
     }
+    public override void Interact()
+    {
+        textbox.SetText("It gets boring in my cage");
+     
+    }
 
-   
-    
+
 }
