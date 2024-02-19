@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public abstract class Animal : MonoBehaviour
 {
-    
+    public TextMeshPro textbox;
     public float rateOfHunger;
     public float currentTemperature;
     public float health;
